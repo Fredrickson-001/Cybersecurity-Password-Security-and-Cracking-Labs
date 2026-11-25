@@ -89,4 +89,4 @@ This exercise provided practical experience with PDF hash extraction, hash-file 
 
 ### Screenshot Evidence
 
-![John the Ripper - Successful Password Recovery](screenshots/cracked-password-jtr.png)
+![John the Ripper - Successful Password Recovery](cracked-password-jtr.png)
