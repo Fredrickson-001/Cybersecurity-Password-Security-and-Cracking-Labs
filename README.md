@@ -33,3 +33,56 @@ I repeated the exercise using NETWORKWALKS' browser-based Hash Calculator and Pa
 Both approaches successfully recovered the same password, demonstrating how dictionary attacks can exploit weak or commonly used passwords.
 
 This exercise gave me practical exposure to password hash extraction, dictionary attacks, and password recovery techniques while reinforcing the importance of strong, unique passwords as a fundamental part of cybersecurity.
+
+## Module 1 — Password Cracking with John the Ripper (JTR)
+
+### Objective
+Recover the password of `My Locked PDF1.pdf` using John the Ripper and its Johnny GUI on Windows through a dictionary attack.
+
+### Tools & Resources
+- **John the Ripper 1.9.0-jumbo-1:** 64-bit Windows binaries (ZIP).
+- **Johnny GUI 2.2:** Windows graphical interface for John the Ripper.
+- **PDF Hash Extractor:** [OnlineHashCrack PDF Hash Extractor](https://onlinehashcrack.com/tools-pdf-hash-extractor.php).
+
+### Procedure
+
+**1. Download and Set Up John the Ripper**
+- Downloaded the Windows ZIP package from [Openwall](https://www.openwall.com/john/).
+- Extracted the downloaded archive into the Downloads directory.
+
+**2. Install Johnny GUI**
+- Downloaded Johnny GUI 2.2 for Windows from [Openwall](https://openwall.info/wiki/john/johnny).
+- Ran the installer to complete the setup.
+
+**3. Configure Johnny to Use John the Ripper**
+- Opened Johnny and navigated to Settings → Browse.
+- Located the extracted John the Ripper directory.
+- Selected `john.exe` from the `run` folder.
+- Johnny successfully detected John the Ripper version 1.9.0-jumbo-1.
+
+**4. Extract the PDF Password Hash**
+- Uploaded `My Locked PDF1.pdf` to the online PDF Hash Extractor.
+- Generated and copied the extracted hash, identified by its `$pdf$` prefix.
+
+**5. Prepare the Hash File**
+- Pasted the extracted hash into Notepad.
+- Inspected the output and removed unwanted characters, such as a leading `b'`.
+- Saved the file as `hash1.txt`, ensuring the file type was set to **All Files** to avoid an unintended `.txt.txt` extension.
+
+**6. Execute the Dictionary Attack**
+- Launched Johnny and selected **Open Password File**.
+- Loaded `hash1.txt`.
+- Clicked **Start New Attack** to initiate the password-cracking process.
+- Allowed the attack to run until completion.
+
+### Results and Verification
+
+**Attack Status:** Successful
+
+- **Recovered password:** `password1` (redacted from public documentation).
+- **Verification:** Opened the original PDF and entered the recovered password.
+- **Outcome:** The PDF was successfully unlocked.
+
+### Key Learning
+
+This exercise provided practical experience with PDF hash extraction, hash-file preparation, John the Ripper configuration, and dictionary-based password attacks. It demonstrated how weak or commonly used passwords can be recovered when their corresponding hashes are exposed to offline cracking techniques.
