@@ -86,3 +86,7 @@ Recover the password of `My Locked PDF1.pdf` using John the Ripper and its Johnn
 ### Key Learning
 
 This exercise provided practical experience with PDF hash extraction, hash-file preparation, John the Ripper configuration, and dictionary-based password attacks. It demonstrated how weak or commonly used passwords can be recovered when their corresponding hashes are exposed to offline cracking techniques.
+
+### Screenshot Evidence
+
+![John the Ripper - Successful Password Recovery](screenshots/cracked-password-jtr.png)
