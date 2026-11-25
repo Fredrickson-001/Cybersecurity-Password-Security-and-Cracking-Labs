@@ -95,7 +95,7 @@ This exercise provided practical experience with PDF hash extraction, hash-file 
 
 `nw{networkwalks_flag1_jtr_270521_1}`
 
-## Module 2 — Password Cracking with NETWORKWALKS Tools
+### Module 2 — Password Cracking with NETWORKWALKS Tools
 
 ### Objective
 Recover the password of `My Locked PDF1.pdf` using NETWORKWALKS' browser-based Hash Calculator and Password Cracker tools without installing additional software.
