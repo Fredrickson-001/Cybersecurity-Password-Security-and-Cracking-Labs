@@ -90,3 +90,48 @@ This exercise provided practical experience with PDF hash extraction, hash-file 
 ### Screenshot Evidence
 
 ![John the Ripper - Successful Password Recovery](cracked-password-jtr.png)
+
+## Flag
+
+`nw{networkwalks_flag1_jtr_270521_1}`
+
+## Module 2 — Password Cracking with NETWORKWALKS Tools
+
+### Objective
+Recover the password of `My Locked PDF1.pdf` using NETWORKWALKS' browser-based Hash Calculator and Password Cracker tools without installing additional software.
+
+### Tools & Resources
+- **NETWORKWALKS Hash Calculator:** https://networkwalks.com/hash-calculator/
+- **NETWORKWALKS Password Cracker:** https://networkwalks.com/password-cracker/
+
+### Procedure
+
+**1. Obtain the PDF File**
+- Downloaded `My Locked PDF1.pdf` from the internship lab page.
+- Prepared the file for hash extraction.
+
+**2. Extract the PDF Password Hash**
+- Opened the NETWORKWALKS Hash Calculator.
+- Uploaded the password-protected PDF.
+- The tool identified the file as password-protected and generated a crackable hash in `$pdf$` format.
+- Distinguished the PDF password hash from the generic MD5/SHA file checksums also displayed on the page.
+- Copied the complete PDF hash for the next stage.
+
+**3. Execute the Password-Cracking Process**
+- Opened the NETWORKWALKS Password Cracker.
+- Pasted the extracted `$pdf$` hash into the **PDF HASH** field.
+- Selected the built-in wordlist.
+- Clicked **START CRACKING** to initiate the process.
+
+**4. Results and Verification**
+
+**Attack Status:** Successful
+
+- **Tool Response:** PASSWORD CRACKED SUCCESSFULLY.
+- **Recovered password:** `password1` (redacted from public documentation).
+- **Verification:** Opened the original PDF and entered the recovered password.
+- **Outcome:** The PDF was successfully unlocked without requiring any locally installed password-cracking software.
+
+### Key Learning
+
+This exercise demonstrated how browser-based tools can simplify password hash extraction and dictionary-based password recovery. It also provided an opportunity to compare a locally installed solution (John the Ripper) with an online alternative, highlighting how different tools can achieve the same objective.
