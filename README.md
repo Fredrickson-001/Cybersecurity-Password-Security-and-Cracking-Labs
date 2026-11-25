@@ -139,3 +139,15 @@ This exercise demonstrated how browser-based tools can simplify password hash ex
 ### Screenshot Evidence
 
 ![NETWORKWALKS Password Cracking - Successful Recovery](cracked-password-networkwalks.png)
+
+## Conclusion
+
+Completing both modules provided valuable hands-on experience with PDF password hash extraction and dictionary-based password cracking.
+
+By using John the Ripper with Johnny GUI and NETWORKWALKS' browser-based tools, I successfully recovered the same password through two different approaches.
+
+Beyond completing the challenge, I gained a better understanding of how password vulnerabilities can be exploited and why strong, unique passwords are essential for protecting sensitive information.
+
+This wraps up my Week 3 practical exercise at NETWORKWALKS. Another step forward in my cybersecurity learning journey.
+
+**Learn. Practise. Document. Improve.**
