@@ -135,3 +135,7 @@ Recover the password of `My Locked PDF1.pdf` using NETWORKWALKS' browser-based H
 ### Key Learning
 
 This exercise demonstrated how browser-based tools can simplify password hash extraction and dictionary-based password recovery. It also provided an opportunity to compare a locally installed solution (John the Ripper) with an online alternative, highlighting how different tools can achieve the same objective.
+
+### Screenshot Evidence
+
+![NETWORKWALKS Password Cracking - Successful Recovery](cracked-password-networkwalks.png)
